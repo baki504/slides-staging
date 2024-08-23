@@ -28,7 +28,6 @@
     "rimraf": "^6.0.1"
   },
   "workspaces": [
-    "slides-top",
-    "work2"
+    "slides-top"
   ]
 }
