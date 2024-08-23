@@ -6,7 +6,7 @@
   "private": true,
   "scripts": {
     "start": "marp -ps slides",
-    "build": "npm-run-all clean deck og-image generate:top",
+    "build": "npm-run-all clean deck og-image build:top copy:top",
     "open": "node scripts/open-top.js",
     "clean": "rimraf public && mkdir public",
     "deck": "npm-run-all generate:slides move:slides copy:assets generate:plantuml:images",
@@ -16,7 +16,9 @@
     "copy:assets": "ncp slides/assets public/assets",
     "generate:plantuml:images": "node scripts/generate-plantuml-images.js",
     "generate:top": "node scripts/generate-top.js",
-    "marp": "marp"
+    "marp": "marp",
+    "build:top": "npm run build --workspace=slides-top",
+    "copy:top": "ncp slides-top/out public"
   },
   "devDependencies": {
     "@marp-team/marp-cli": "^3.4.0",
@@ -24,5 +26,9 @@
     "node-plantuml": "^0.9.0",
     "npm-run-all": "^4.1.5",
     "rimraf": "^6.0.1"
-  }
+  },
+  "workspaces": [
+    "slides-top",
+    "work2"
+  ]
 }
