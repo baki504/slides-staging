@@ -2,7 +2,7 @@
 
 CoderDojo磐田で使用するスライドを公開しています。以下のリンクからスライドの一覧を参照することができます。
 
-https://coderdojo-iwata.github.io/slides/
+https://baki504.github.io/slides-staging/
 
 スライドはMarkdownをinputに作成できる[Marp](https://marp.app/)を使用しています。
 
