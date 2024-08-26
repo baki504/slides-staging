@@ -3,7 +3,7 @@ name: GitHub Pages
 on:
   push:
     branches:
-      - main
+      - improve-build-performance
 
   workflow_dispatch:
 
