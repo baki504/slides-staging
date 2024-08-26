@@ -62,7 +62,7 @@ const content = `<!DOCTYPE html>
   <meta property="og:image" content="${canonicalUrl}/og-image.png">
   <meta property="og:image:alt" content="CoderDojo磐田 スライド">
   <meta property="og:type" content="website">
-  <meta property="og:url" content="${canonicalUrl}/">
+  <meta property="og:url" content="${canonicalUrl}/"> 
   <meta property="og:locale" content="ja_JP">
 
   <!-- Tailwind CSS CDN -->
