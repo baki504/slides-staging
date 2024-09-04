@@ -53,7 +53,7 @@ const generateSlideHtmls = async () => {
       }
     }
   } catch (err) {
-    console.error("Error reading slides directory:", err);
+    console.error("1Error reading slides directory:", err);
   }
 };
 
